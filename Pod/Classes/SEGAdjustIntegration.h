@@ -1,10 +1,12 @@
 #import <Foundation/Foundation.h>
-#import <Adjust/Adjust.h>
+#import "Adjust.h" // NOTE: this path will work only with SPM
+//#import <Adjust/Adjust.h>
 
 #if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGAnalytics.h>
 #else
-#import <Segment/SEGAnalytics.h>
+#import "SEGAnalytics.h" // NOTE: this path will work only with SPM
+//#import <Segment/SEGAnalytics.h>
 #endif
 
 

@@ -3,7 +3,8 @@
 #if defined(__has_include) && __has_include(<Analytics/SEGAnalytics.h>)
 #import <Analytics/SEGAnalyticsUtils.h>
 #else
-#import <Segment/SEGAnalyticsUtils.h>
+#import "SEGAnalyticsUtils.h" // NOTE: this path will work only with SPM
+//#import <Segment/SEGAnalyticsUtils.h>
 #endif
 
 
